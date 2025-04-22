@@ -1,0 +1,141 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swati Udhwani | Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Swati Udhwani</h1>
+      <p class="subtitle">Finance | Digital Business | Entrepreneurship Aspirant</p>
+      <p class="contact-info">Location: Bhopal, Madhya Pradesh, India<br>Email: swatiudhwani10@gmail.com | Phone: +91-8269032836</p>
+      <a href="SWATI%20RESUME.pdf" download class="btn">Download Resume</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <img src="Swati.jpg" alt="Swati Udhwani" class="profile-photo">
+          <p>
+            Motivated and detail-oriented BBA student specialising in Finance, Digital Business, and Entrepreneurship. Strong foundation in financial analysis, e-commerce operations, and digital marketing. Seeking opportunities to contribute to business growth while enhancing my learning in a dynamic, innovation-driven environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" data-aos="fade-up" data-aos-delay="200">
+      <div class="container">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>BBA in Finance</strong> - Barkatullah University Bhopal (2023 - 2026)</li>
+          <li><strong>BBA in Digital Business</strong> - IIM Bangalore (2024 - 2027)</li>
+          <li><strong>10th</strong> - Kendriya Vidyalaya Bairagarh (2021) 87.6%</li>
+          <li><strong>12th</strong> - Kendriya Vidyalaya Bairagarh (2023) 83.8%</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up" data-aos-delay="400">
+      <div class="container">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Financial Strategy Report:</strong> Executed an in-depth financial project involving balance sheet creation, ratio analysis, WACC computation, and capital budgeting (NPV & IRR). Designed a diversified investment portfolio with risk-return assessment. Developed a financial strategy plan focusing on cost control, investment analysis, and profitability forecasting.
+</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" data-aos="fade-up" data-aos-delay="600">
+      <div class="container">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Intern</strong> at Onprice Infotech Pvt. Ltd., Bhopal (Jan 2024 – Feb 2024): Completed an academic internship focused on e-commerce operations and digital marketplace
+management. Gained practical exposure to online product listing, customer communication, and backend ecommerce operations.</li>
+          <li>
+          <strong>Intern</strong> at Versatile Marketing Agency, Bhopal (Dec 2024 – Feb 2025): Completed hands-on training in digital marketing strategies including SEO, social media marketing, and
+content marketing. Helped execute real-time marketing campaigns and analysed digital performance using basic analytics tools.
+        </li>
+        </ul>
+      </div>
+    </section>
+
+   <section id="volunteering" data-aos="fade-up" data-aos-delay="700">
+  <div class="container">
+    <h2>Volunteering</h2>
+    <ul>
+      <li>
+        <strong>Cadet Volunteer – Robin Hood Army, Bhopal Chapter:</strong> Participated in food distribution drives and academy activities to support underprivileged communities. Contributed to team-led outreach programs and social welfare initiatives aimed at community development and hunger relief.
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section id="skills" data-aos="fade-up" data-aos-delay="800">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>Financial Analysis & Planning</li>
+          <li>Digital Marketing (SEO, Social Media)</li>
+          <li>E-Commerce Operations</li>
+          <li>Strategic Business Planning</li>
+          <li>Budgeting and Financial Reporting</li>
+          <li>MS Excel (Formulas, Basic Data Analysis)</li>
+          <li>MS PowerPoint (Presentations, Reports)</li>
+          <li>Google Analytics (Beginner)</li>
+          <li>Communication & Team Collaboration</li>
+          <li>Problem-Solving and Critical Thinking</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Swati Udhwani. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="dark-mode-toggle" class="btn">Toggle Dark Mode</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+    });
+
+    // Dark mode toggle functionality
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+      } else {
+        localStorage.setItem('dark-mode', 'disabled');
+      }
+    });
+
+    // Check localStorage for dark mode preference
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+    }
+  </script>
+</body>
+</html>
